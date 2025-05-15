@@ -1,3 +1,33 @@
+# Shualeduri Proeqti
+
+This is a web application built with [Next.js](https://nextjs.org), designed to [briefly describe what the app does – e.g., manage tasks, show movie listings, etc.]. The project was bootstrapped with `create-next-app`.
+
+## 🚀 Features
+
+- Server-side rendering with Next.js
+- Font optimization using `next/font`
+- [List other features: authentication, API integration, dynamic routing, etc.]
+
+## 🛠 Tech Stack
+
+- **Framework:** Next.js
+- **Language:** JavaScript / TypeScript (whichever you use)
+- **Styling:** [Tailwind CSS / CSS Modules / styled-components]
+- **Deployment:** Vercel (optional)
+
+## 📦 Installation
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/your-username/shualeduri-proeqti.git
+cd shualeduri-proeqti
+npm install
+
+
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -35,3 +65,4 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+

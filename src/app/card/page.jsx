@@ -7,13 +7,14 @@ const fetchCartProducts = async (id) => {
   const result = await response.json();
   return result;
 };
-const Card = async (id) => {
+const Card = async () => {
   const response = await fetch(`https://fakestoreapi.com/carts/1`);
   const cart = await response.json();
   const data = [];
   for (let product of cart.products) {
     data.push(await fetchCartProducts(product.productId));
   }
+  const total=data[0].price+data[1].price+data[2].price;
   return (
     <div className={styles.parent}>
       <div className={styles.child1}>
@@ -65,7 +66,7 @@ const Card = async (id) => {
             </div>
             <div className={styles.shipping}>
               <p>Subtotal</p>
-              <p>$price</p>
+              <p>${total}</p>
             </div>
           </div>
           <div className={styles.applay}>
@@ -76,7 +77,7 @@ const Card = async (id) => {
             </div>
             <div className={styles.total}>
               <p>Total</p>
-              <p>$price</p>
+              <p>${total}</p>
             </div>
           </div>
           <div className={styles.btn1}>

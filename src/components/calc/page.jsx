@@ -26,7 +26,11 @@ const Calc = () => {
         className={styles.plus}
         onClick={() =>
           setNumber(() => {
-            return number + 1;
+            if (number === 10) {
+              return 10;
+            } else {
+              return number + 1;
+            }
           })
         }
       >

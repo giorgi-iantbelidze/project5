@@ -32,17 +32,17 @@ const Profile = () => {
           <p>Geolocation</p>
         </div>
         <div className={styles.info2}>
-          <p>kevin</p>
-          <p>ryan</p>
+          <p>{products.name?.firstname}</p>
+          <p>{products.name?.lastname}</p>
           <p>{products.username}</p>
           <p>{products.password}</p>
           <p>{products.email}</p>
           <p>{products.phone}</p>
-          <p>cullman</p>
-          <p>Frances Ct</p>
-          <p>86</p>
-          <p>29567-1452</p>
-          <p>lat:40.3467 long:-30.1310</p>
+          <p>{products.ddress?.city}</p>
+          <p>{products.address?.street}</p>
+          <p>{products.address?.number}</p>
+          <p>{products.address?.zipcode}</p>
+          <p>{products.address?.geolocation?.lat} {products.address?.geolocation?.long}</p>
         </div>
       </div>
     </div>
